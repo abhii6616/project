@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link to your custom CSS file (style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-semibold">ABHISHEK KUMAR <br> SHAISTA KHANAM</h1>
+            <ul class="mt-4">
+                <li class="inline-block mx-4"><a href="#about">About</a></li>
+                <li class="inline-block mx-4"><a href="#portfolio">Portfolio</a></li>
+                <li class="inline-block mx-4"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (About) -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 md:pr-8">
+                    <h2 class="text-4xl font-semibold mb-4">About Me</h2>
+                    <p class="text-gray-600">My name is Abhishek kumar and my partners name is Shaista khanam.We are Professional Photographer. we study in Acharya Institute Of Technology.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="partner.jpg" alt="Profile pic" class="rounded-lg shadow-lg" width="200" height="200">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold mb-8">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Items -->
+                <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <img src="cloudy.jpg" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                        <p class="text-gray-600">This picture was taken in Acharya institute of Technology.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <img src="church street.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                        <p class="text-gray-600">This picture was taken in church street,banglore.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <img src="a ray of sunlight.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                        <p class="text-gray-600">A Ray of sunlight.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <img src="mahadev.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 4</h3>
+                        <p class="text-gray-600">Mahadev.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <img src="sky.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 5</h3>
+                        <p class="text-gray-600">sky.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <img src="tree with sky.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 6</h3>
+                        <p class="text-gray-600">Tree with sky</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <img src="leaf.jpg" alt="Project 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Project 7</h3>
+                        <p class="text-gray-600">This picture shows beauty of leafs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold mb-8">Contact Me</h2>
+            <div class="md:w-1/2">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-600">Name</label>
+                        <input type="text" id="name" name="name" class="w-full rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-600">Email</label>
+                        <input type="email" id="email" name="email" class="w-full rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-600">Message</label>
+                        <textarea id="message" name="message" class="w-full rounded-lg border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <div class="container mx-auto">
+            &copy; 2023 ABHISHEK KUMAR. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript (you can include additional scripts here) -->
+    <script src="script.js"></script>
+</body>
+</html>
